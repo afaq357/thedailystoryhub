@@ -2,15 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>The Daily Story Hub | Latest News, Trending Stories & More</title>
 
   <meta name="description" content="The Daily Story Hub brings you the latest news, trending stories, interesting articles, entertainment and updates.">
-
   <meta name="keywords" content="latest news, trending stories, viral stories, entertainment, lifestyle, interesting stories">
-
   <meta name="author" content="The Daily Story Hub">
 
   <meta property="og:title" content="The Daily Story Hub">
@@ -26,9 +23,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f6f8;
-      color: #171717;
-      line-height: 1.6;
+      background: #ffffff;
+      color: #333333;
     }
 
     a {
@@ -37,244 +33,164 @@
     }
 
     img {
-      width: 100%;
       display: block;
+      width: 100%;
     }
 
     /* HEADER */
 
-    header {
+    .header {
+      width: 100%;
       background: #ffffff;
-      border-bottom: 1px solid #e5e5e5;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      border-bottom: 1px solid #eeeeee;
     }
 
     .header-inner {
-      max-width: 1180px;
-      margin: auto;
-      padding: 18px 20px;
+      max-width: 1050px;
+      margin: 0 auto;
+      min-height: 92px;
+      padding: 0 20px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
     }
 
     .logo {
-      font-size: 25px;
-      font-weight: 800;
-      color: #111;
-      white-space: nowrap;
+      font-size: 28px;
+      font-weight: 700;
+      color: #333333;
     }
 
     .logo span {
-      color: #635bff;
+      color: #4324d6;
     }
 
-    nav {
-      display: flex;
-      gap: 24px;
-      font-size: 15px;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      color: #635bff;
-    }
-
-    .menu-btn {
-      display: none;
-      border: 0;
-      background: none;
-      font-size: 28px;
+    .menu {
+      font-size: 17px;
+      color: #555555;
+      font-weight: 500;
       cursor: pointer;
+    }
+
+    .menu-dots {
+      font-size: 22px;
+      letter-spacing: 2px;
+      margin-right: 4px;
     }
 
     /* MAIN */
 
     .container {
-      max-width: 1180px;
-      margin: auto;
-      padding: 30px 20px 60px;
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 35px 20px 60px;
     }
 
-    /* FEATURED */
+    /* BLOG POST */
 
-    .featured {
-      display: grid;
-      grid-template-columns: 1.6fr 1fr;
-      gap: 25px;
-      margin-bottom: 40px;
+    .post {
+      padding: 0 0 28px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid #dddddd;
     }
 
-    .featured-main {
-      background: #fff;
-      border-radius: 12px;
+    .post-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 22px;
+    }
+
+    .post-image {
+      width: 270px;
+      height: 175px;
+      flex-shrink: 0;
       overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      background: #eeeeee;
     }
 
-    .featured-main .image {
-      height: 390px;
-      overflow: hidden;
-    }
-
-    .featured-main img {
+    .post-image img {
+      width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    .featured-content {
-      padding: 24px;
+    .post-info {
+      flex: 1;
+      padding-top: 2px;
     }
 
     .category {
       display: inline-block;
-      color: #635bff;
+      background: #13c98b;
+      color: #ffffff;
+      padding: 7px 11px;
+      border-radius: 4px;
+
       font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 8px;
+      line-height: 1;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
-    .featured-content h1 {
-      font-size: 31px;
+    .post-title {
+      color: #111111;
+      font-size: 27px;
       line-height: 1.2;
-      margin-bottom: 12px;
-    }
-
-    .meta {
-      color: #888;
-      font-size: 13px;
-      margin-bottom: 12px;
-    }
-
-    .excerpt {
-      color: #555;
-      font-size: 15px;
-    }
-
-    /* SIDE STORIES */
-
-    .side-stories {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .side-card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      display: grid;
-      grid-template-columns: 145px 1fr;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    }
-
-    .side-card .image {
-      height: 145px;
-    }
-
-    .side-card img {
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .side-content {
-      padding: 15px;
-    }
-
-    .side-content h3 {
-      font-size: 17px;
-      line-height: 1.3;
-      margin-bottom: 7px;
-    }
-
-    /* SECTION */
-
-    .section-title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 2px solid #222;
-      margin: 45px 0 22px;
-      padding-bottom: 10px;
-    }
-
-    .section-title h2 {
-      font-size: 24px;
-    }
-
-    .section-title a {
-      color: #635bff;
-      font-size: 14px;
       font-weight: 700;
+      margin-bottom: 9px;
     }
 
-    /* BLOG GRID */
-
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+    .post-title:hover {
+      color: #3420c9;
     }
 
-    .blog-card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    .post-meta {
+      color: #888888;
+      font-size: 13px;
+      margin-bottom: 10px;
     }
 
-    .blog-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 7px 20px rgba(0,0,0,0.1);
+    .post-excerpt {
+      color: #666666;
+      font-size: 17px;
+      line-height: 1.75;
     }
 
-    .blog-card .image {
-      height: 220px;
-      overflow: hidden;
-      position: relative;
+    /* FEATURED FIRST POST */
+
+    .post:first-child .post-image {
+      width: 300px;
+      height: 190px;
     }
 
-    .blog-card img {
-      height: 100%;
-      object-fit: cover;
+    .post:first-child .post-title {
+      color: #252525;
     }
 
-    .blog-content {
-      padding: 18px;
-    }
-
-    .blog-content h3 {
-      font-size: 19px;
-      line-height: 1.35;
-      margin: 5px 0 10px;
-    }
-
-    .blog-content p {
-      color: #666;
-      font-size: 14px;
-    }
-
-    /* YOUTUBE */
+    /* VIDEO */
 
     .video-section {
-      margin-top: 50px;
+      margin: 45px 0;
+      padding: 25px;
+      background: #f7f7f7;
+      border: 1px solid #eeeeee;
     }
 
-    .video-box {
-      background: #000;
-      border-radius: 12px;
-      overflow: hidden;
-      position: relative;
+    .section-title {
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #222222;
+    }
+
+    .video {
       width: 100%;
       aspect-ratio: 16 / 9;
+      background: #000000;
     }
 
-    .video-box iframe {
+    .video iframe {
       width: 100%;
       height: 100%;
       border: 0;
@@ -283,186 +199,189 @@
     /* INTERESTING FOR YOU */
 
     .interesting {
-      margin-top: 50px;
+      margin-top: 45px;
+    }
+
+    .interesting-title {
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #222222;
+      border-bottom: 2px solid #222222;
+      padding-bottom: 10px;
     }
 
     .interesting-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
     .interesting-card {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border: 1px solid #eeeeee;
+      background: #ffffff;
     }
 
-    .interesting-card .image {
+    .interesting-image {
       height: 160px;
+      overflow: hidden;
     }
 
-    .interesting-card img {
+    .interesting-image img {
       height: 100%;
       object-fit: cover;
     }
 
-    .interesting-card h4 {
-      font-size: 15px;
+    .interesting-content {
+      padding: 14px;
+    }
+
+    .interesting-content .category {
+      margin-bottom: 8px;
+    }
+
+    .interesting-content h3 {
+      font-size: 18px;
       line-height: 1.35;
-      padding: 13px;
+      color: #222222;
     }
 
     /* FOOTER */
 
-    footer {
-      background: #171717;
-      color: #fff;
+    .footer {
+      background: #ffffff;
+      border-top: 1px solid #eeeeee;
       margin-top: 50px;
     }
 
     .footer-inner {
-      max-width: 1180px;
+      max-width: 1050px;
       margin: auto;
-      padding: 40px 20px;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 40px;
+      padding: 30px 20px;
+      text-align: center;
     }
 
     .footer-logo {
-      font-size: 24px;
-      font-weight: 800;
-      margin-bottom: 12px;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
     }
 
-    .footer-inner p {
-      color: #aaa;
+    .footer-logo span {
+      color: #4324d6;
+    }
+
+    .footer-text {
+      color: #888888;
       font-size: 14px;
-    }
-
-    .footer-inner h3 {
-      margin-bottom: 12px;
-      font-size: 16px;
+      margin-bottom: 15px;
     }
 
     .footer-links {
       display: flex;
-      flex-direction: column;
-      gap: 7px;
-      color: #aaa;
+      justify-content: center;
+      gap: 20px;
       font-size: 14px;
-    }
-
-    .copyright {
-      border-top: 1px solid #333;
-      text-align: center;
-      color: #888;
-      padding: 18px;
-      font-size: 13px;
+      color: #666666;
     }
 
     /* MOBILE */
 
-    @media (max-width: 800px) {
+    @media (max-width: 700px) {
 
       .header-inner {
+        min-height: 75px;
+        padding: 0 18px;
+      }
+
+      .logo {
+        font-size: 22px;
+      }
+
+      .menu {
+        font-size: 15px;
+      }
+
+      .container {
+        padding: 28px 15px 45px;
+      }
+
+      .post {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+      }
+
+      .post-top {
+        display: block;
+      }
+
+      .post-image,
+      .post:first-child .post-image {
+        width: 100%;
+        height: 215px;
+        margin-bottom: 14px;
+      }
+
+      .post-info {
+        padding: 0;
+      }
+
+      .category {
+        font-size: 12px;
+        padding: 7px 10px;
+        margin-bottom: 9px;
+      }
+
+      .post-title,
+      .post:first-child .post-title {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+
+      .post-meta {
+        font-size: 12px;
+      }
+
+      .post-excerpt {
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      .video-section {
         padding: 15px;
       }
+
+      .interesting-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .interesting-image {
+        height: 210px;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 430px) {
 
       .logo {
         font-size: 21px;
       }
 
-      nav {
-        display: none;
+      .post-image,
+      .post:first-child .post-image {
+        height: 205px;
       }
 
-      .menu-btn {
-        display: block;
-      }
-
-      .container {
-        padding: 20px 14px 45px;
-      }
-
-      .featured {
-        grid-template-columns: 1fr;
-      }
-
-      .featured-main .image {
-        height: 260px;
-      }
-
-      .featured-content h1 {
-        font-size: 25px;
-      }
-
-      .side-card {
-        grid-template-columns: 115px 1fr;
-      }
-
-      .side-card .image {
-        height: 115px;
-      }
-
-      .side-content h3 {
-        font-size: 15px;
-      }
-
-      .blog-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-      }
-
-      .blog-card .image {
-        height: 220px;
-      }
-
-      .interesting-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-      }
-
-      .interesting-card .image {
-        height: 125px;
-      }
-
-      .interesting-card h4 {
-        font-size: 14px;
-      }
-
-      .footer-inner {
-        grid-template-columns: 1fr;
-        gap: 25px;
-      }
-    }
-
-    @media (max-width: 480px) {
-
-      .featured-main .image {
-        height: 220px;
-      }
-
-      .featured-content {
-        padding: 18px;
-      }
-
-      .featured-content h1 {
+      .post-title,
+      .post:first-child .post-title {
         font-size: 23px;
       }
 
-      .side-card {
-        grid-template-columns: 100px 1fr;
-      }
-
-      .side-card .image {
-        height: 100px;
-      }
-
-      .section-title h2 {
-        font-size: 21px;
+      .post-excerpt {
+        font-size: 15px;
       }
     }
   </style>
@@ -472,482 +391,266 @@
 
   <!-- HEADER -->
 
-  <header>
+  <header class="header">
     <div class="header-inner">
 
       <a href="#" class="logo">
         The Daily <span>Story Hub</span>
       </a>
 
-      <nav>
-        <a href="#">Home</a>
-        <a href="#latest">Latest</a>
-        <a href="#trending">Trending</a>
-        <a href="#videos">Videos</a>
-        <a href="#about">About</a>
-      </nav>
-
-      <button class="menu-btn">☰</button>
+      <div class="menu">
+        <span class="menu-dots">•••</span> MENU
+      </div>
 
     </div>
   </header>
 
 
+  <!-- BLOG POSTS -->
+
   <main class="container">
 
-    <!-- FEATURED STORIES -->
 
-    <section class="featured">
+    <!-- POST 1 -->
 
-      <article class="featured-main">
+    <article class="post">
 
-        <a href="#">
-          <div class="image">
-            <img
-              src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80"
-              alt="Latest news">
-          </div>
+      <div class="post-top">
+
+        <a href="#" class="post-image">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+            alt="Beautiful mountain landscape">
         </a>
 
-        <div class="featured-content">
+        <div class="post-info">
 
-          <span class="category">Latest News</span>
+          <span class="category">Uncategorized</span>
 
-          <h1>
-            The Latest Stories Everyone Is Talking About Today
-          </h1>
+          <a href="#">
+            <h2 class="post-title">
+              A Stunning Sunset Adventure in the Mountains
+            </h2>
+          </a>
 
-          <div class="meta">
+          <div class="post-meta">
             By The Daily Story Hub · September 28, 2026 · 0 Comments
           </div>
 
-          <p class="excerpt">
-            Discover the latest updates, interesting stories and trending
-            topics from around the web.
-          </p>
+        </div>
+
+      </div>
+
+      <p class="post-excerpt">
+        A breathtaking sunset, dramatic mountain landscapes, and a beautiful
+        travel moment come together in one unforgettable scene. Discover the
+        story behind this amazing view and the experience that made it special.
+      </p>
+
+    </article>
+
+
+    <!-- POST 2 -->
+
+    <article class="post">
+
+      <div class="post-top">
+
+        <a href="#" class="post-image">
+          <img
+            src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=900&q=80"
+            alt="News story">
+        </a>
+
+        <div class="post-info">
+
+          <span class="category">Uncategorized</span>
+
+          <a href="#">
+            <h2 class="post-title">
+              The Latest Story Everyone Is Talking About Today
+            </h2>
+          </a>
+
+          <div class="post-meta">
+            By The Daily Story Hub · September 28, 2026 · 0 Comments
+          </div>
 
         </div>
 
-      </article>
+      </div>
+
+      <p class="post-excerpt">
+        A developing story has attracted widespread attention online.
+        Here is a closer look at the latest details, background and information
+        surrounding the story.
+      </p>
+
+    </article>
 
 
-      <div class="side-stories">
+    <!-- POST 3 -->
 
-        <article class="side-card">
+    <article class="post">
+
+      <div class="post-top">
+
+        <a href="#" class="post-image">
+          <img
+            src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=80"
+            alt="Breaking news">
+        </a>
+
+        <div class="post-info">
+
+          <span class="category">Uncategorized</span>
 
           <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=600&q=80"
-                alt="News">
-            </div>
+            <h2 class="post-title">
+              Breaking News: New Details Are Emerging
+            </h2>
           </a>
 
-          <div class="side-content">
-            <span class="category">News</span>
+          <div class="post-meta">
+            By The Daily Story Hub · September 28, 2026 · 0 Comments
+          </div>
 
-            <h3>
+        </div>
+
+      </div>
+
+      <p class="post-excerpt">
+        New information is emerging as this story continues to develop.
+        Read the latest updates and important details in our full report.
+      </p>
+
+    </article>
+
+
+    <!-- POST 4 -->
+
+    <article class="post">
+
+      <div class="post-top">
+
+        <a href="#" class="post-image">
+          <img
+            src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=900&q=80"
+            alt="Newspaper">
+        </a>
+
+        <div class="post-info">
+
+          <span class="category">News</span>
+
+          <a href="#">
+            <h2 class="post-title">
               Interesting News Stories You Should Know
-            </h3>
-
-            <div class="meta">
-              September 28, 2026
-            </div>
-          </div>
-
-        </article>
-
-
-        <article class="side-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80"
-                alt="Lifestyle">
-            </div>
+            </h2>
           </a>
 
-          <div class="side-content">
-            <span class="category">Lifestyle</span>
-
-            <h3>
-              Stories, Ideas and Trends Making Headlines
-            </h3>
-
-            <div class="meta">
-              September 28, 2026
-            </div>
+          <div class="post-meta">
+            By The Daily Story Hub · September 28, 2026 · 0 Comments
           </div>
 
-        </article>
-
-
-        <article class="side-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80"
-                alt="Technology">
-            </div>
-          </a>
-
-          <div class="side-content">
-            <span class="category">Technology</span>
-
-            <h3>
-              New Trends Changing The Way We Live
-            </h3>
-
-            <div class="meta">
-              September 28, 2026
-            </div>
-          </div>
-
-        </article>
+        </div>
 
       </div>
 
-    </section>
+      <p class="post-excerpt">
+        From interesting developments to stories making headlines,
+        here are some of the updates that are getting attention today.
+      </p>
+
+    </article>
 
 
-    <!-- LATEST STORIES -->
+    <!-- POST 5 -->
 
-    <section id="latest">
+    <article class="post">
 
-      <div class="section-title">
+      <div class="post-top">
 
-        <h2>Latest Stories</h2>
+        <a href="#" class="post-image">
+          <img
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80"
+            alt="Trending story">
+        </a>
 
-        <a href="#">View All →</a>
+        <div class="post-info">
+
+          <span class="category">Trending</span>
+
+          <a href="#">
+            <h2 class="post-title">
+              Stories And Trends Getting Attention Around The World
+            </h2>
+          </a>
+
+          <div class="post-meta">
+            By The Daily Story Hub · September 28, 2026 · 0 Comments
+          </div>
+
+        </div>
 
       </div>
 
+      <p class="post-excerpt">
+        These are some of the topics and stories currently attracting
+        attention. Read more about what is trending and why people are
+        talking about it.
+      </p>
 
-      <div class="blog-grid">
-
-        <article class="blog-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
-                alt="Story">
-            </div>
-          </a>
-
-          <div class="blog-content">
-
-            <span class="category">Interesting</span>
-
-            <h3>
-              5 Things You May Not Know About Everyday Life
-            </h3>
-
-            <div class="meta">
-              By The Daily Story Hub · September 28, 2026
-            </div>
-
-            <p>
-              Read more about this interesting story and discover
-              some surprising facts.
-            </p>
-
-          </div>
-
-        </article>
+    </article>
 
 
-        <article class="blog-card">
+    <!-- POST 6 -->
+
+    <article class="post">
+
+      <div class="post-top">
+
+        <a href="#" class="post-image">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+            alt="Technology story">
+        </a>
+
+        <div class="post-info">
+
+          <span class="category">Technology</span>
 
           <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
-                alt="Travel">
-            </div>
+            <h2 class="post-title">
+              New Technology Trends You Should Know About
+            </h2>
           </a>
 
-          <div class="blog-content">
-
-            <span class="category">Travel</span>
-
-            <h3>
-              Beautiful Places That Are Worth Discovering
-            </h3>
-
-            <div class="meta">
-              By The Daily Story Hub · September 28, 2026
-            </div>
-
-            <p>
-              Explore fascinating places and stories from around
-              the world.
-            </p>
-
+          <div class="post-meta">
+            By The Daily Story Hub · September 28, 2026 · 0 Comments
           </div>
 
-        </article>
-
-
-        <article class="blog-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
-                alt="Business">
-            </div>
-          </a>
-
-          <div class="blog-content">
-
-            <span class="category">Business</span>
-
-            <h3>
-              Trends That Are Changing Business Today
-            </h3>
-
-            <div class="meta">
-              By The Daily Story Hub · September 28, 2026
-            </div>
-
-            <p>
-              Interesting updates and stories from the world of
-              business and work.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="blog-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
-                alt="Lifestyle">
-            </div>
-          </a>
-
-          <div class="blog-content">
-
-            <span class="category">Lifestyle</span>
-
-            <h3>
-              Simple Ideas That Can Make Everyday Life Better
-            </h3>
-
-            <div class="meta">
-              By The Daily Story Hub · September 28, 2026
-            </div>
-
-            <p>
-              Interesting lifestyle stories, ideas and updates.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="blog-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
-                alt="Technology">
-            </div>
-          </a>
-
-          <div class="blog-content">
-
-            <span class="category">Technology</span>
-
-            <h3>
-              Technology Stories And New Ideas To Watch
-            </h3>
-
-            <div class="meta">
-              By The Daily Story Hub · September 28, 2026
-            </div>
-
-            <p>
-              Catch up with interesting technology stories and
-              trending updates.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="blog-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80"
-                alt="Entertainment">
-            </div>
-          </a>
-
-          <div class="blog-content">
-
-            <span class="category">Entertainment</span>
-
-            <h3>
-              Entertainment Stories And Trending Updates
-            </h3>
-
-            <div class="meta">
-              By The Daily Story Hub · September 28, 2026
-            </div>
-
-            <p>
-              Read the latest entertainment stories and trending
-              topics.
-            </p>
-
-          </div>
-
-        </article>
+        </div>
 
       </div>
 
-    </section>
+      <p class="post-excerpt">
+        Technology continues to change quickly. Here are some interesting
+        developments, ideas and stories worth knowing about.
+      </p>
+
+    </article>
 
 
-    <!-- TRENDING -->
+    <!-- YOUTUBE -->
 
-    <section id="trending">
+    <section class="video-section">
 
-      <div class="section-title">
+      <h2 class="section-title">
+        Latest Video
+      </h2>
 
-        <h2>Trending Stories</h2>
-
-        <a href="#">View All →</a>
-
-      </div>
-
-
-      <div class="blog-grid">
-
-        <article class="blog-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
-                alt="Trending story">
-            </div>
-          </a>
-
-          <div class="blog-content">
-
-            <span class="category">Trending</span>
-
-            <h3>
-              What Everyone Is Talking About Right Now
-            </h3>
-
-            <div class="meta">
-              September 28, 2026
-            </div>
-
-            <p>
-              A look at some of today's most interesting trending stories.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="blog-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80"
-                alt="Event">
-            </div>
-          </a>
-
-          <div class="blog-content">
-
-            <span class="category">Trending</span>
-
-            <h3>
-              Stories And Events Getting Attention Online
-            </h3>
-
-            <div class="meta">
-              September 28, 2026
-            </div>
-
-            <p>
-              Discover the stories currently attracting attention.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="blog-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80"
-                alt="Online trends">
-            </div>
-          </a>
-
-          <div class="blog-content">
-
-            <span class="category">Trending</span>
-
-            <h3>
-              The Online Trends You Should Know About
-            </h3>
-
-            <div class="meta">
-              September 28, 2026
-            </div>
-
-            <p>
-              Follow the latest topics and stories appearing online.
-            </p>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- YOUTUBE VIDEO -->
-
-    <section id="videos" class="video-section">
-
-      <div class="section-title">
-
-        <h2>Latest Video</h2>
-
-      </div>
-
-      <div class="video-box">
-
-        <!-- YOUTUBE VIDEO -->
-        <!-- Replace VIDEO_ID with your YouTube video ID -->
+      <div class="video">
 
         <iframe
           src="https://www.youtube.com/embed/VIDEO_ID"
@@ -965,44 +668,33 @@
 
     <section class="interesting">
 
-      <div class="section-title">
-
-        <h2>INTERESTING FOR YOU</h2>
-
-      </div>
-
+      <h2 class="interesting-title">
+        INTERESTING FOR YOU
+      </h2>
 
       <div class="interesting-grid">
 
-        <article class="interesting-card">
-
-          <a href="#">
-            <div class="image">
-              <img
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80"
-                alt="Interesting story">
-            </div>
-
-            <h4>
-              Interesting Stories You Might Have Missed
-            </h4>
-          </a>
-
-        </article>
-
 
         <article class="interesting-card">
 
           <a href="#">
-            <div class="image">
+
+            <div class="interesting-image">
               <img
                 src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=700&q=80"
                 alt="Interesting story">
             </div>
 
-            <h4>
-              Things Worth Knowing About Today's World
-            </h4>
+            <div class="interesting-content">
+
+              <span class="category">Interesting</span>
+
+              <h3>
+                Interesting Stories You Might Have Missed
+              </h3>
+
+            </div>
+
           </a>
 
         </article>
@@ -1011,15 +703,23 @@
         <article class="interesting-card">
 
           <a href="#">
-            <div class="image">
+
+            <div class="interesting-image">
               <img
                 src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=700&q=80"
-                alt="Interesting story">
+                alt="Trending story">
             </div>
 
-            <h4>
-              Stories That Are Getting People's Attention
-            </h4>
+            <div class="interesting-content">
+
+              <span class="category">Trending</span>
+
+              <h3>
+                Stories That Are Getting People's Attention
+              </h3>
+
+            </div>
+
           </a>
 
         </article>
@@ -1028,18 +728,27 @@
         <article class="interesting-card">
 
           <a href="#">
-            <div class="image">
+
+            <div class="interesting-image">
               <img
-                src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=700&q=80"
-                alt="Interesting story">
+                src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=700&q=80"
+                alt="Latest story">
             </div>
 
-            <h4>
-              More Interesting Stories To Explore
-            </h4>
+            <div class="interesting-content">
+
+              <span class="category">Latest</span>
+
+              <h3>
+                More Interesting Stories To Explore
+              </h3>
+
+            </div>
+
           </a>
 
         </article>
+
 
       </div>
 
@@ -1050,56 +759,26 @@
 
   <!-- FOOTER -->
 
-  <footer id="about">
+  <footer class="footer">
 
     <div class="footer-inner">
 
-      <div>
-
-        <div class="footer-logo">
-          The Daily Story Hub
-        </div>
-
-        <p>
-          The Daily Story Hub brings you the latest news,
-          trending stories, interesting articles and updates.
-        </p>
-
+      <div class="footer-logo">
+        The Daily <span>Story Hub</span>
       </div>
 
+      <p class="footer-text">
+        Latest news, trending stories and interesting updates.
+      </p>
 
-      <div>
-
-        <h3>Quick Links</h3>
-
-        <div class="footer-links">
-          <a href="#">Home</a>
-          <a href="#latest">Latest Stories</a>
-          <a href="#trending">Trending</a>
-          <a href="#videos">Videos</a>
-        </div>
-
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
       </div>
 
-
-      <div>
-
-        <h3>Information</h3>
-
-        <div class="footer-links">
-          <a href="#">About Us</a>
-          <a href="#">Contact</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <div class="copyright">
-      © 2026 The Daily Story Hub. All Rights Reserved.
     </div>
 
   </footer>
