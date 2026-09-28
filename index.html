@@ -47,8 +47,8 @@
 
     .header-inner {
       max-width: 1050px;
-      margin: 0 auto;
-      min-height: 92px;
+      margin: auto;
+      min-height: 88px;
       padding: 0 20px;
 
       display: flex;
@@ -67,14 +67,13 @@
     }
 
     .menu {
-      font-size: 17px;
-      color: #555555;
+      font-size: 16px;
+      color: #666666;
       font-weight: 500;
-      cursor: pointer;
     }
 
     .menu-dots {
-      font-size: 22px;
+      font-size: 21px;
       letter-spacing: 2px;
       margin-right: 4px;
     }
@@ -83,14 +82,14 @@
 
     .container {
       max-width: 1050px;
-      margin: 0 auto;
-      padding: 35px 20px 60px;
+      margin: auto;
+      padding: 38px 20px 60px;
     }
 
-    /* BLOG POST */
+    /* POST */
 
     .post {
-      padding: 0 0 28px;
+      padding-bottom: 28px;
       margin-bottom: 28px;
       border-bottom: 1px solid #dddddd;
     }
@@ -98,12 +97,12 @@
     .post-top {
       display: flex;
       align-items: flex-start;
-      gap: 22px;
+      gap: 20px;
     }
 
     .post-image {
-      width: 270px;
-      height: 175px;
+      width: 235px;
+      height: 150px;
       flex-shrink: 0;
       overflow: hidden;
       background: #eeeeee;
@@ -117,55 +116,44 @@
 
     .post-info {
       flex: 1;
-      padding-top: 2px;
+      min-width: 0;
     }
 
     .category {
       display: inline-block;
-      background: #13c98b;
+      background: #12c98a;
       color: #ffffff;
       padding: 7px 11px;
       border-radius: 4px;
-
       font-size: 13px;
       line-height: 1;
       font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .post-title {
-      color: #111111;
-      font-size: 27px;
-      line-height: 1.2;
-      font-weight: 700;
       margin-bottom: 9px;
     }
 
+    .post-title {
+      color: #333333;
+      font-size: 27px;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
     .post-title:hover {
-      color: #3420c9;
+      color: #3824cf;
     }
 
     .post-meta {
       color: #888888;
       font-size: 13px;
-      margin-bottom: 10px;
+      line-height: 1.5;
     }
 
     .post-excerpt {
       color: #666666;
       font-size: 17px;
-      line-height: 1.75;
-    }
-
-    /* FEATURED FIRST POST */
-
-    .post:first-child .post-image {
-      width: 300px;
-      height: 190px;
-    }
-
-    .post:first-child .post-title {
-      color: #252525;
+      line-height: 1.7;
+      margin-top: 13px;
     }
 
     /* VIDEO */
@@ -180,8 +168,8 @@
     .section-title {
       font-size: 23px;
       font-weight: 700;
-      margin-bottom: 18px;
       color: #222222;
+      margin-bottom: 18px;
     }
 
     .video {
@@ -205,16 +193,16 @@
     .interesting-title {
       font-size: 23px;
       font-weight: 700;
-      margin-bottom: 20px;
       color: #222222;
-      border-bottom: 2px solid #222222;
       padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #222222;
     }
 
     .interesting-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      gap: 20px;
     }
 
     .interesting-card {
@@ -228,16 +216,13 @@
     }
 
     .interesting-image img {
+      width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
     .interesting-content {
       padding: 14px;
-    }
-
-    .interesting-content .category {
-      margin-bottom: 8px;
     }
 
     .interesting-content h3 {
@@ -281,6 +266,7 @@
       display: flex;
       justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
       font-size: 14px;
       color: #666666;
     }
@@ -290,98 +276,128 @@
     @media (max-width: 700px) {
 
       .header-inner {
-        min-height: 75px;
-        padding: 0 18px;
+        min-height: 72px;
+        padding: 0 15px;
       }
-
-      .logo {
-        font-size: 22px;
-      }
-
-      .menu {
-        font-size: 15px;
-      }
-
-      .container {
-        padding: 28px 15px 45px;
-      }
-
-      .post {
-        padding-bottom: 25px;
-        margin-bottom: 25px;
-      }
-
-      .post-top {
-        display: block;
-      }
-
-      .post-image,
-      .post:first-child .post-image {
-        width: 100%;
-        height: 215px;
-        margin-bottom: 14px;
-      }
-
-      .post-info {
-        padding: 0;
-      }
-
-      .category {
-        font-size: 12px;
-        padding: 7px 10px;
-        margin-bottom: 9px;
-      }
-
-      .post-title,
-      .post:first-child .post-title {
-        font-size: 24px;
-        line-height: 1.25;
-      }
-
-      .post-meta {
-        font-size: 12px;
-      }
-
-      .post-excerpt {
-        font-size: 16px;
-        line-height: 1.65;
-      }
-
-      .video-section {
-        padding: 15px;
-      }
-
-      .interesting-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .interesting-image {
-        height: 210px;
-      }
-
-      .footer-links {
-        flex-wrap: wrap;
-      }
-    }
-
-    @media (max-width: 430px) {
 
       .logo {
         font-size: 21px;
       }
 
-      .post-image,
-      .post:first-child .post-image {
-        height: 205px;
+      .menu {
+        font-size: 14px;
       }
 
-      .post-title,
-      .post:first-child .post-title {
-        font-size: 23px;
+      .container {
+        padding: 25px 15px 45px;
+      }
+
+      /* IMPORTANT:
+         IMAGE AND TITLE STAY SIDE BY SIDE */
+
+      .post-top {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .post-image {
+        width: 145px;
+        height: 125px;
+        flex-shrink: 0;
+      }
+
+      .post-info {
+        flex: 1;
+      }
+
+      .category {
+        font-size: 11px;
+        padding: 7px 9px;
+        margin-bottom: 7px;
+      }
+
+      .post-title {
+        font-size: 19px;
+        line-height: 1.25;
+        margin-bottom: 7px;
+      }
+
+      .post-meta {
+        font-size: 11px;
+        line-height: 1.4;
       }
 
       .post-excerpt {
         font-size: 15px;
+        line-height: 1.65;
+        margin-top: 12px;
+      }
+
+      .post {
+        padding-bottom: 22px;
+        margin-bottom: 22px;
+      }
+
+      /* VIDEO */
+
+      .video-section {
+        padding: 15px;
+        margin-top: 35px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      /* INTERESTING */
+
+      .interesting-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .interesting-image {
+        height: 190px;
+      }
+
+      .interesting-content h3 {
+        font-size: 17px;
+      }
+    }
+
+    /* SMALL PHONES */
+
+    @media (max-width: 430px) {
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .post-top {
+        gap: 13px;
+      }
+
+      .post-image {
+        width: 125px;
+        height: 110px;
+      }
+
+      .post-title {
+        font-size: 17px;
+      }
+
+      .category {
+        font-size: 10px;
+        padding: 6px 8px;
+      }
+
+      .post-meta {
+        font-size: 10px;
+      }
+
+      .post-excerpt {
+        font-size: 14px;
       }
     }
   </style>
@@ -392,6 +408,7 @@
   <!-- HEADER -->
 
   <header class="header">
+
     <div class="header-inner">
 
       <a href="#" class="logo">
@@ -403,6 +420,7 @@
       </div>
 
     </div>
+
   </header>
 
 
@@ -420,7 +438,7 @@
         <a href="#" class="post-image">
           <img
             src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
-            alt="Beautiful mountain landscape">
+            alt="Mountain story">
         </a>
 
         <div class="post-info">
@@ -541,7 +559,7 @@
 
         <div class="post-info">
 
-          <span class="category">News</span>
+          <span class="category">Uncategorized</span>
 
           <a href="#">
             <h2 class="post-title">
@@ -642,7 +660,7 @@
     </article>
 
 
-    <!-- YOUTUBE -->
+    <!-- YOUTUBE VIDEO -->
 
     <section class="video-section">
 
@@ -673,7 +691,6 @@
       </h2>
 
       <div class="interesting-grid">
-
 
         <article class="interesting-card">
 
@@ -748,7 +765,6 @@
           </a>
 
         </article>
-
 
       </div>
 
